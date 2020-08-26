@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="index.js"></script>
+    <title>Online To Do List</title>
+    <h1>Online To Do List</h1>
+  </head>
+  <body>
+    <div class="create-task">
+      <div class="task-name">
+        <textarea id="textarea" placeholder="Enter Task"></textarea>
+        <p id="warning" class="warning">* Sorry, you have too many tasks</p>
+      </div>
+      <div class="priority-selector">
+        <label for="priority">Priority (H, M, L)</label>
+        <br>
+        <input id="priority-selector" type="text" name="priority" placeholder="Enter a priority">
+        <br>
+      </div>
+      <div class="due-date-selector">
+        <label for="due-date">Due Date</label>
+        <br>
+        <input type="date" id="due-date" name="due-date" placeholder="MM/DD/YYYY">
+        <p id="date-warning" class="warning">* Sorry, please enter a date in the future or a valid date</p>
+        <br>
+      </div>
+      <div class="save-task">
+        <button id="save-task" onclick="saveTask()">Save</button>
+        <br>
+      </div>
+    </div>
+    <h3 id="to-do-heading">To Do's</h3>
+    <div class="to-do-section">
+      <div id="to-dos">
+        <p id="append"></p><br>
+      </div>
+    </div>
+  </body>
+  <footer>
+    <h3 class="footer-text">Designed by Cindy Yang</h3>
+  </footer>
+</html>

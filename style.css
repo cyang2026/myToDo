@@ -1,0 +1,124 @@
+/*Global styles*/
+
+p {
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+}
+
+button {
+  display: inline-block;
+  height: 35px;
+  width: 70px;
+  background-color: rgb(98, 119, 247);
+  color: rgb(38, 23, 90);
+  font-size: 18px;
+  border-radius: 17px;
+  text-align: center;
+  line-height: 1em;
+  padding: 0px;
+}
+
+* {
+  font-family: "Didot";
+}
+
+h1 {
+  text-align: center;
+  background-color: rgba(10, 10, 255, 0.4);
+}
+
+/*Creating a task*/
+
+textarea {
+  height: 80%;
+  width: 100%;
+  font-size: 16px;
+}
+
+.warning {
+  font-size: 8px;
+  color: red;
+  visibility: hidden;
+}
+
+#save-task, #due-date {
+  float: right;
+  position: relative;
+  bottom: 0px;
+}
+
+.priority-selector, .due-date-selector {
+  position: relative;
+  top: 0px;
+  float: right;
+  text-align: right;
+}
+
+.create-task {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: 2fr 1fr;
+  padding: 5px;
+  justify-content: center;
+  grid-row-gap: 5px;
+  grid-column-gap: 5px;
+}
+
+.task-name {
+  grid-area: 1 / 1 / 4 / 2;
+  padding: 10px;
+}
+
+.priority-selector {
+  grid-area: 1 / 2 / span 1 / span 1;
+}
+
+.due-date-selector {
+  grid-area: 2 / 2 / span 1 / span 1;
+}
+
+.save-task {
+  grid-area: 3 / 2 / span 1 / span 1;
+}
+
+/*To Do List Styling*/
+
+#to-do-heading {
+  position: relative;
+}
+
+.delete-button, .get-info {
+  height: 30px;
+  width: 30px;
+  background-color: white;
+  color: red;
+  font-family: "Trebuchet MS";
+  float: right;
+  position: relative;
+  top: 5px;
+  border: none;
+}
+
+.delete-button:hover {
+  background-color: lightGrey;
+  transition: background-color 500ms linear;
+}
+
+.get-info {
+  border-radius: 20px;
+  border: 1px solid black;
+  color: black;
+}
+
+/*Footer stylng*/
+
+footer {
+  background-color: rgb(7, 138, 253);
+}
+
+.footer-text {
+  text-align: center;
+  color: white;
+  font-weight: normal;
+}
